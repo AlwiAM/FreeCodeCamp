@@ -1,0 +1,68 @@
+freecodecamp first project, "Build a Survey Form"
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Manga Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Favorite Manga Survey</h1>
+    </header>
+    <section>
+      <p id="description">Please fill out this survey to let us know about your favorite manga.</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age:</label>
+          <input type="number" id="number" name="age" min="1" max="99" placeholder="Enter your age" required>
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Select your favorite manga:</label>
+          <select id="dropdown" name="manga">
+            <option value="" disabled selected>Select an option</option>
+            <option value="One Piece">One Piece</option>
+            <option value="Naruto">Naruto</option>
+            <option value="Dragon Ball">Dragon Ball</option>
+            <option value="Attack on Titan">Attack on Titan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Which genre do you like?</label>
+          
+          <label for="action"><input type="radio" id="action" name="genre" value="action">Action</label>
+          <label for="comedy"><input type="radio" id="comedy" name="genre" value="comedy">Comedy</label>
+          <label for="romance"><input type="radio" id="romance" name="genre" value="romance">Romance</label>
+          <label for="fantasy"><input type="radio" id="fantasy" name="genre" value="fantasy">Fantasy</label>
+        </div>
+          <br>
+        <div class="form-group">
+          <label>Which of these do you like?</label>
+         
+          <label for="character"><input type="checkbox" id="character" name="like" value="character">Character development</label>
+          <label for="art"><input type="checkbox" id="art" name="like" value="art">Art style</label>
+          <label for="story"><input type="checkbox" id="story" name="like" value="story">Storyline</label>
+        </div>
+          <br>
+        <div class="form-group">
+          <label for="comments">Additional comments:</label>
+          <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
+
+
